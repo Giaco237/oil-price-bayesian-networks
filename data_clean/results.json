@@ -1,0 +1,701 @@
+{
+ "sample": {
+  "monthly_start": "1990-01-01",
+  "monthly_end": "2026-07-01",
+  "monthly_obs": 439,
+  "monthly_vars": 29,
+  "daily_start": "1990-01-02",
+  "daily_end": "2026-09-29",
+  "daily_obs": 8550,
+  "raw_monthly_vars": 23,
+  "raw_daily_vars": 8,
+  "weekday_rows": 9591
+ },
+ "distribution": {
+  "WTI daily": {
+   "n": 8547,
+   "mean": 0.000252255,
+   "std": 0.0282140541,
+   "skewness": -0.1323729448,
+   "excess_kurtosis": 24.7278693857,
+   "JB_stat": 217783.8330508639,
+   "JB_p": 0.0,
+   "KS_vs_normal_p": 1.213536883e-49,
+   "student_t_df": 3.1576090417,
+   "q01": -0.0754572601,
+   "q99": 0.0725277384,
+   "min": -0.4063957736,
+   "max": 0.4258324109
+  },
+  "Brent daily": {
+   "n": 8394,
+   "mean": 0.0001851764,
+   "std": 0.0267123641,
+   "skewness": -1.7453061677,
+   "excess_kurtosis": 60.1599833904,
+   "JB_stat": 1270084.9396099164,
+   "JB_p": 0.0,
+   "KS_vs_normal_p": 8.578934535e-59,
+   "student_t_df": 2.9440134895,
+   "q01": -0.0689301143,
+   "q99": 0.0697335298,
+   "min": -0.6436989051,
+   "max": 0.4120225087
+  },
+  "NASDAQ daily": {
+   "n": 8544,
+   "mean": 0.0004842069,
+   "std": 0.0152184136,
+   "skewness": -0.1892999708,
+   "excess_kurtosis": 6.8117713955,
+   "JB_stat": 16569.5100157272,
+   "JB_p": 0.0,
+   "KS_vs_normal_p": 2.078874907e-60,
+   "student_t_df": 2.6885189203,
+   "q01": -0.043027083,
+   "q99": 0.0408531203,
+   "min": -0.1314915387,
+   "max": 0.1325464453
+  },
+  "WTI monthly": {
+   "n": 438,
+   "mean": 0.002894972,
+   "std": 0.0967193005,
+   "skewness": -0.5249718945,
+   "excess_kurtosis": 7.5442210464,
+   "JB_stat": 1058.8221701227,
+   "JB_p": 1.201398539e-230,
+   "KS_vs_normal_p": 0.0199091403,
+   "student_t_df": 4.0968661133,
+   "q01": -0.2726049778,
+   "q99": 0.2144867171,
+   "min": -0.5681250146,
+   "max": 0.5456210356
+  }
+ },
+ "tails": {
+  "WTI daily": {
+   "k": 4.0,
+   "n": 8547,
+   "observed": 49,
+   "expected_if_normal": 0.54,
+   "ratio": 90.5
+  },
+  "Brent daily": {
+   "k": 4.0,
+   "n": 8394,
+   "observed": 45,
+   "expected_if_normal": 0.53,
+   "ratio": 84.6
+  },
+  "NASDAQ daily": {
+   "k": 4.0,
+   "n": 8544,
+   "observed": 52,
+   "expected_if_normal": 0.54,
+   "ratio": 96.1
+  },
+  "WTI monthly": {
+   "k": 4.0,
+   "n": 438,
+   "observed": 3,
+   "expected_if_normal": 0.03,
+   "ratio": 108.1
+  }
+ },
+ "aggregation": {
+  "1": {
+   "n": 8547,
+   "excess_kurtosis": 24.7278693857,
+   "skewness": -0.1323729448,
+   "std": 0.0282140541
+  },
+  "5": {
+   "n": 8543,
+   "excess_kurtosis": 14.5358848186,
+   "skewness": -0.2514513261,
+   "std": 0.0604556389
+  },
+  "21": {
+   "n": 8527,
+   "excess_kurtosis": 11.3575007607,
+   "skewness": -0.3671520604,
+   "std": 0.1181542452
+  },
+  "63": {
+   "n": 8485,
+   "excess_kurtosis": 6.4733408728,
+   "skewness": -0.7373796631,
+   "std": 0.2134047705
+  }
+ },
+ "acf_wti": {
+  "returns": {
+   "acf_lag1": -0.0236872231,
+   "acf_lag5": -0.0284919578,
+   "acf_lag10": -0.0134988,
+   "acf_lag22": -0.0384655658,
+   "LB_p_lag1": 0.0285048211,
+   "LB_p_lag5": 1e-10,
+   "LB_p_lag10": 7.7e-09,
+   "LB_p_lag22": 0.0
+  },
+  "absolute returns": {
+   "acf_lag1": 0.2464588085,
+   "acf_lag5": 0.2454480755,
+   "acf_lag10": 0.2048404177,
+   "acf_lag22": 0.186238245,
+   "LB_p_lag1": 5.879504775e-115,
+   "LB_p_lag5": 0.0,
+   "LB_p_lag10": 0.0,
+   "LB_p_lag22": 0.0
+  },
+  "squared returns": {
+   "acf_lag1": 0.1553822043,
+   "acf_lag5": 0.1407114416,
+   "acf_lag10": 0.0984396661,
+   "acf_lag22": 0.1868755936,
+   "LB_p_lag1": 8.264134802e-47,
+   "LB_p_lag5": 0.0,
+   "LB_p_lag10": 0.0,
+   "LB_p_lag22": 0.0
+  }
+ },
+ "acf_ndx": {
+  "returns": {
+   "acf_lag1": -0.0394918554,
+   "acf_lag5": 0.0041587466,
+   "acf_lag10": -0.0197020413,
+   "acf_lag22": 0.0067416657,
+   "LB_p_lag1": 0.0002611993,
+   "LB_p_lag5": 0.0021309319,
+   "LB_p_lag10": 5.041e-07,
+   "LB_p_lag22": 0.0
+  },
+  "absolute returns": {
+   "acf_lag1": 0.2895629004,
+   "acf_lag5": 0.3182104328,
+   "acf_lag10": 0.2979912213,
+   "acf_lag22": 0.227256249,
+   "LB_p_lag1": 7.208093905e-158,
+   "LB_p_lag5": 0.0,
+   "LB_p_lag10": 0.0,
+   "LB_p_lag22": 0.0
+  },
+  "squared returns": {
+   "acf_lag1": 0.2709478917,
+   "acf_lag5": 0.2451995446,
+   "acf_lag10": 0.2496813454,
+   "acf_lag22": 0.1416669667,
+   "LB_p_lag1": 1.784399886e-138,
+   "LB_p_lag5": 0.0,
+   "LB_p_lag10": 0.0,
+   "LB_p_lag22": 0.0
+  }
+ },
+ "arch_wti": {
+  "lags": 12.0,
+  "LM_stat": 1380.7158498119315,
+  "LM_p": 1.9985051361363086e-288,
+  "F_stat": 137.05611240629815,
+  "F_p": 0.0
+ },
+ "arch_ndx": {
+  "lags": 12.0,
+  "LM_stat": 1761.5747569042792,
+  "LM_p": 0.0,
+  "F_stat": 184.71089105974914,
+  "F_p": 0.0
+ },
+ "stationarity": {
+  "WTI level (monthly)": {
+   "n": 439,
+   "ADF_stat": -2.6751715945,
+   "ADF_p": 0.0784340876,
+   "KPSS_stat": 2.0857895924,
+   "KPSS_p": 0.01,
+   "verdict": "unit root / inconclusive"
+  },
+  "WTI real (monthly)": {
+   "n": 439,
+   "ADF_stat": -3.298641787,
+   "ADF_p": 0.0149392959,
+   "KPSS_stat": 1.1695589555,
+   "KPSS_p": 0.01,
+   "verdict": "unit root / inconclusive"
+  },
+  "WTI log return (monthly)": {
+   "n": 438,
+   "ADF_stat": -12.6678598342,
+   "ADF_p": 1.263270622e-23,
+   "KPSS_stat": 0.0317435511,
+   "KPSS_p": 0.1,
+   "verdict": "stationary"
+  },
+  "WTI level (daily)": {
+   "n": 8550,
+   "ADF_stat": -2.3382232927,
+   "ADF_p": 0.159936291,
+   "KPSS_stat": 7.8409665358,
+   "KPSS_p": 0.01,
+   "verdict": "unit root / inconclusive"
+  },
+  "WTI log return (daily)": {
+   "n": 8547,
+   "ADF_stat": -15.1162274565,
+   "ADF_p": 7.572171805e-28,
+   "KPSS_stat": 0.0390765589,
+   "KPSS_p": 0.1,
+   "verdict": "stationary"
+  },
+  "Brent-WTI spread": {
+   "n": 439,
+   "ADF_stat": -2.8062195962,
+   "ADF_p": 0.0573908206,
+   "KPSS_stat": 1.3961867714,
+   "KPSS_p": 0.01,
+   "verdict": "unit root / inconclusive"
+  }
+ },
+ "seasonality": {
+  "table": {
+   "Jan": {
+    "mean": 0.0144300528,
+    "std": 0.0786982857,
+    "n": 36
+   },
+   "Feb": {
+    "mean": 0.0050568337,
+    "std": 0.0670582918,
+    "n": 37
+   },
+   "Mar": {
+    "mean": 0.0263284535,
+    "std": 0.1390383636,
+    "n": 37
+   },
+   "Apr": {
+    "mean": 0.010912792,
+    "std": 0.1225778029,
+    "n": 37
+   },
+   "May": {
+    "mean": 0.0253805101,
+    "std": 0.1131021402,
+    "n": 37
+   },
+   "Jun": {
+    "mean": 0.0047541692,
+    "std": 0.0908501301,
+    "n": 37
+   },
+   "Jul": {
+    "mean": 0.0106222856,
+    "std": 0.064506641,
+    "n": 37
+   },
+   "Aug": {
+    "mean": 0.0058180959,
+    "std": 0.0917355992,
+    "n": 36
+   },
+   "Sep": {
+    "mean": 0.0082330906,
+    "std": 0.0743099624,
+    "n": 36
+   },
+   "Oct": {
+    "mean": -0.001325379,
+    "std": 0.0841350833,
+    "n": 36
+   },
+   "Nov": {
+    "mean": -0.0358607115,
+    "std": 0.0857606791,
+    "n": 36
+   },
+   "Dec": {
+    "mean": -0.0414351179,
+    "std": 0.1064401533,
+    "n": 36
+   }
+  },
+  "anova_p": 0.06312397833022852,
+  "kruskal_p": 0.03316807602432837,
+  "anova_F": 1.7371325183253943,
+  "kruskal_H": 21.019646959968895
+ },
+ "leverage_oil": {
+  "n": 4808.0,
+  "corr_return_vs_dvol": -0.35234715615355416,
+  "mean_dvol_after_up": -0.5721525491770373,
+  "mean_dvol_after_down": 0.5292781889420983,
+  "asymmetry": -0.04287436023493896
+ },
+ "leverage_equity": {
+  "n": 8544.0,
+  "corr_return_vs_dvol": -0.6991151769267909,
+  "mean_dvol_after_up": -0.718168016194332,
+  "mean_dvol_after_down": 0.8728117692907248,
+  "asymmetry": 0.15464375309639278
+ },
+ "regimes": {
+  "oil": {
+   "low vol": {
+    "to low vol": 0.9853876974,
+    "to high vol": 0.0146123026
+   },
+   "high vol": {
+    "to low vol": 0.0146191936,
+    "to high vol": 0.9853808064
+   }
+  },
+  "equity": {
+   "low vol": {
+    "to low vol": 0.9896226415,
+    "to high vol": 0.0103773585
+   },
+   "high vol": {
+    "to low vol": 0.0103749116,
+    "to high vol": 0.9896250884
+   }
+  },
+  "oil_median_vol": 0.3489469059914563,
+  "equity_median_vol": 0.17095016729129303,
+  "oil_expected_duration": 68.4032258064517,
+  "equity_expected_duration": 96.38636363636334
+ },
+ "negative_price": {
+  "rows": [
+   {
+    "date": 1587340800000,
+    "previous_close": 18.31,
+    "close": -36.98,
+    "simple_return": -3.0196613872,
+    "log_return": null,
+    "next_close": 8.91
+   }
+  ],
+  "log_returns_lost": 2
+ },
+ "correlation_with_wti": {
+  "WTI return": 1.0,
+  "global activity": 0.1291,
+  "US dollar": -0.4224,
+  "S&P 500": 0.1723,
+  "gold": 0.092,
+  "oil and gas output": -0.0681,
+  "capacity use": -0.051,
+  "policy uncertainty": -0.0871,
+  "crude PPI": 0.9302,
+  "10-year yield": 0.292
+ },
+ "collinear_pairs": [
+  {
+   "a": "WTI return",
+   "b": "crude PPI",
+   "corr": 0.9302
+  },
+  {
+   "a": "oil and gas output",
+   "b": "capacity use",
+   "corr": 0.987
+  }
+ ],
+ "lead_lag_igrea": {
+  "-6": -0.072,
+  "-5": -0.0244,
+  "-4": -0.0929,
+  "-3": -0.0842,
+  "-2": 0.1052,
+  "-1": 0.2132,
+  "0": 0.1291,
+  "1": 0.1404,
+  "2": 0.0812,
+  "3": 0.058,
+  "4": -0.0183,
+  "5": 0.0019,
+  "6": -0.0137
+ },
+ "daily_corr": {
+  "WTI_RET": {
+   "WTI_RET": 1.0,
+   "BRENT_RET": 0.6489,
+   "NASDAQ_RET": 0.0917,
+   "USD_RET": -0.2245
+  },
+  "BRENT_RET": {
+   "WTI_RET": 0.6489,
+   "BRENT_RET": 1.0,
+   "NASDAQ_RET": 0.077,
+   "USD_RET": -0.2455
+  },
+  "NASDAQ_RET": {
+   "WTI_RET": 0.0917,
+   "BRENT_RET": 0.077,
+   "NASDAQ_RET": 1.0,
+   "USD_RET": -0.2672
+  },
+  "USD_RET": {
+   "WTI_RET": -0.2245,
+   "BRENT_RET": -0.2455,
+   "NASDAQ_RET": -0.2672,
+   "USD_RET": 1.0
+  }
+ },
+ "cleaning": {
+  "log_rows": 61,
+  "by_stage": {
+   "A - extreme outlier": 40,
+   "B - bad data": 2,
+   "C - missing values": 15,
+   "Step 6 - sterilisation": 4
+  },
+  "extremes_wti_daily": 20,
+  "extremes_brent_daily": 19,
+  "extremes_wti_monthly": 0,
+  "dropped_daily": [
+   "HH_GAS"
+  ],
+  "dropped_monthly": [],
+  "source_agreement": {
+   "WTI_D": {
+    "overlapping_obs": 8550.0,
+    "max_abs_diff": 0.0,
+    "n_disagreements": 0.0
+   },
+   "BRENT_D": {
+    "overlapping_obs": 8436.0,
+    "max_abs_diff": 0.0,
+    "n_disagreements": 0.0
+   },
+   "VIX": {
+    "overlapping_obs": 9278.0,
+    "max_abs_diff": 0.0,
+    "n_disagreements": 0.0
+   }
+  },
+  "calendar": [
+   {
+    "Series": "HH_GAS",
+    "obs": 5697,
+    "holes_full_weekday_calendar": 2059,
+    "holes_on_trading_calendar": 1448,
+    "pct_on_trading_calendar": 20.92,
+    "spurious_holes_avoided": 611
+   },
+   {
+    "Series": "BRENT_D",
+    "obs": 8436,
+    "holes_full_weekday_calendar": 1150,
+    "holes_on_trading_calendar": 777,
+    "pct_on_trading_calendar": 9.09,
+    "spurious_holes_avoided": 373
+   },
+   {
+    "Series": "USD_D",
+    "obs": 5203,
+    "holes_full_weekday_calendar": 212,
+    "holes_on_trading_calendar": 58,
+    "pct_on_trading_calendar": 1.13,
+    "spurious_holes_avoided": 154
+   },
+   {
+    "Series": "DGS10",
+    "obs": 9195,
+    "holes_full_weekday_calendar": 394,
+    "holes_on_trading_calendar": 79,
+    "pct_on_trading_calendar": 0.92,
+    "spurious_holes_avoided": 315
+   },
+   {
+    "Series": "VIX",
+    "obs": 9288,
+    "holes_full_weekday_calendar": 302,
+    "holes_on_trading_calendar": 20,
+    "pct_on_trading_calendar": 0.23,
+    "spurious_holes_avoided": 282
+   },
+   {
+    "Series": "NASDAQ",
+    "obs": 9258,
+    "holes_full_weekday_calendar": 332,
+    "holes_on_trading_calendar": 18,
+    "pct_on_trading_calendar": 0.21,
+    "spurious_holes_avoided": 314
+   },
+   {
+    "Series": "OVX",
+    "obs": 4884,
+    "holes_full_weekday_calendar": 179,
+    "holes_on_trading_calendar": 3,
+    "pct_on_trading_calendar": 0.06,
+    "spurious_holes_avoided": 176
+   },
+   {
+    "Series": "WTI_D",
+    "obs": 8550,
+    "holes_full_weekday_calendar": 1036,
+    "holes_on_trading_calendar": 0,
+    "pct_on_trading_calendar": 0.0,
+    "spurious_holes_avoided": 1036
+   }
+  ],
+  "naive_vs_calendar": {
+   "n": {
+    "trading calendar, no imputation": 8547.0,
+    "weekday calendar, interpolated": 9583.0
+   },
+   "std": {
+    "trading calendar, no imputation": 0.0282140541,
+    "weekday calendar, interpolated": 0.0256336581
+   },
+   "annualised_vol": {
+    "trading calendar, no imputation": 0.4478842242,
+    "weekday calendar, interpolated": 0.4069217075
+   },
+   "skewness": {
+    "trading calendar, no imputation": -0.1323961815,
+    "weekday calendar, interpolated": 0.0078016022
+   },
+   "excess_kurtosis": {
+    "trading calendar, no imputation": 24.7430436286,
+    "weekday calendar, interpolated": 30.9898053734
+   },
+   "worst_day": {
+    "trading calendar, no imputation": -0.4063957736,
+    "weekday calendar, interpolated": -0.4063957736
+   },
+   "best_day": {
+    "trading calendar, no imputation": 0.4258324109,
+    "weekday calendar, interpolated": 0.4258324109
+   }
+  },
+  "spread_flags": 2,
+  "stale_runs": 0
+ },
+ "drawdown": [
+  {
+   "metric": "max drawdown",
+   "value": "-125.4%"
+  },
+  {
+   "metric": "date of trough",
+   "value": "2020-04-20"
+  },
+  {
+   "metric": "peak before trough",
+   "value": "145.31"
+  },
+  {
+   "metric": "level at trough",
+   "value": "-36.98"
+  },
+  {
+   "metric": "largest 1-day fall",
+   "value": "-40.64%"
+  },
+  {
+   "metric": "largest 1-day rise",
+   "value": "42.58%"
+  }
+ ],
+ "availability": [
+  {
+   "Series": "WTI_M",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "GOLD",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "SP500",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "PPI_DRILL",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "PPI_CRUDE",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "PPI_OILGAS",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "CAPUTL_OILGAS",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "CAP_OILGAS",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "IP_DRILL",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "IP_OILGAS",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "GEOEVENT",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "M2",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "USEPU",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "GS10",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "FEDFUNDS",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "IGREA",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "INDPRO",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "CPIENG",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "BRENT_M",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "UNRATE",
+   "first_observation": 631152000000
+  },
+  {
+   "Series": "GAS_EU",
+   "first_observation": 694224000000
+  },
+  {
+   "Series": "GEPU",
+   "first_observation": 852076800000
+  },
+  {
+   "Series": "HH_GAS_M",
+   "first_observation": 852076800000
+  },
+  {
+   "Series": "USD_M",
+   "first_observation": 1136073600000
+  }
+ ]
+}

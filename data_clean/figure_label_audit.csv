@@ -1,0 +1,9 @@
+figure,kind,data_axes,x_label,y_label,ticks_both_axes,source_note
+G8_data_allocation.png,chart,1,True,True,True,True
+G9_replication.png,chart,1,True,True,True,True
+G10_indegree.png,chart,2,True,True,True,True
+G11_score_selection.png,chart,1,True,True,True,True
+G12_dead_band.png,chart,2,True,True,True,True
+G13_episode_duration.png,chart,1,True,True,True,True
+G14_backtest.png,chart,2,True,True,True,True
+G15_final_network.png,diagram,0,n/a,n/a,n/a,True

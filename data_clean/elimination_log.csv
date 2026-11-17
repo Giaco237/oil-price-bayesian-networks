@@ -1,0 +1,62 @@
+Series,Stage,Rule,Date,Old,New,Decision,Rationale
+BRENT-WTI,B - bad data,|spread| > 30.0,2020-04-20,54.34,54.34,"FLAGGED, retained",spread outside the plausible arbitrage band
+BRENT-WTI,B - bad data,|spread| > 30.0,2026-09-25,30.78,30.78,"FLAGGED, retained",spread outside the plausible arbitrage band
+WTI_D,A - extreme outlier,3/3 screens,1990-08-06,23.79,28.73,"FLAGGED, retained",log return 0.1887 = 6.9 sigma
+WTI_D,A - extreme outlier,3/3 screens,1990-10-22,33.82,28.46,"FLAGGED, retained",log return -0.1726 = -6.3 sigma
+WTI_D,A - extreme outlier,3/3 screens,1991-01-17,32.25,21.48,"FLAGGED, retained",log return -0.4064 = -14.8 sigma
+WTI_D,A - extreme outlier,2/3 screens,1998-04-27,13.23,15.43,"FLAGGED, retained",log return 0.1538 = 5.6 sigma
+WTI_D,A - extreme outlier,2/3 screens,2008-09-22,104.05,122.61,"FLAGGED, retained",log return 0.1641 = 6.0 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-03-09,41.14,31.05,"FLAGGED, retained",log return -0.2814 = -10.3 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-03-18,26.96,20.48,"FLAGGED, retained",log return -0.2749 = -10.0 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-03-19,20.48,25.09,"FLAGGED, retained",log return 0.2030 = 7.4 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-03-20,25.09,19.48,"FLAGGED, retained",log return -0.2531 = -9.2 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-03-23,19.48,23.33,"FLAGGED, retained",log return 0.1804 = 6.6 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-03-26,20.75,16.6,"FLAGGED, retained",log return -0.2231 = -8.2 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-03-31,14.1,20.51,"FLAGGED, retained",log return 0.3747 = 13.7 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-04-02,20.28,25.18,"FLAGGED, retained",log return 0.2164 = 7.9 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-04-22,8.91,13.64,"FLAGGED, retained",log return 0.4258 = 15.6 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-04-27,15.99,12.17,"FLAGGED, retained",log return -0.2730 = -10.0 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-04-29,12.4,15.04,"FLAGGED, retained",log return 0.1930 = 7.1 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-04-30,15.04,19.23,"FLAGGED, retained",log return 0.2458 = 9.0 sigma
+WTI_D,A - extreme outlier,3/3 screens,2020-05-05,20.47,24.56,"FLAGGED, retained",log return 0.1822 = 6.7 sigma
+WTI_D,A - extreme outlier,3/3 screens,2026-04-08,114.58,96.17,"FLAGGED, retained",log return -0.1752 = -6.4 sigma
+WTI_D,A - extreme outlier,2/3 screens,2026-09-28,85.23,99.37,"FLAGGED, retained",log return 0.1535 = 5.6 sigma
+BRENT_D,A - extreme outlier,3/3 screens,1990-10-22,33.2,27.45,"FLAGGED, retained",log return -0.1902 = -7.2 sigma
+BRENT_D,A - extreme outlier,2/3 screens,1991-01-09,25.73,22.35,"FLAGGED, retained",log return -0.1408 = -5.3 sigma
+BRENT_D,A - extreme outlier,3/3 screens,1991-01-10,22.35,26.58,"FLAGGED, retained",log return 0.1733 = 6.5 sigma
+BRENT_D,A - extreme outlier,3/3 screens,1991-01-17,30.28,21.1,"FLAGGED, retained",log return -0.3612 = -13.6 sigma
+BRENT_D,A - extreme outlier,3/3 screens,1998-03-23,12.35,14.53,"FLAGGED, retained",log return 0.1626 = 6.1 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2001-09-24,25.17,20.63,"FLAGGED, retained",log return -0.1989 = -7.5 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2008-12-05,43.83,37.04,"FLAGGED, retained",log return -0.1683 = -6.3 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2020-03-09,45.6,35.33,"FLAGGED, retained",log return -0.2552 = -9.6 sigma
+BRENT_D,A - extreme outlier,2/3 screens,2020-03-16,32.25,27.98,"FLAGGED, retained",log return -0.1420 = -5.4 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2020-03-18,27.97,22.79,"FLAGGED, retained",log return -0.2048 = -7.7 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2020-03-30,22.39,19.19,"FLAGGED, retained",log return -0.1542 = -5.8 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2020-03-31,19.19,14.85,"FLAGGED, retained",log return -0.2564 = -9.7 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2020-04-02,14.97,20.24,"FLAGGED, retained",log return 0.3016 = 11.4 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2020-04-03,20.24,24.33,"FLAGGED, retained",log return 0.1840 = 6.9 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2020-04-09,25.22,20.23,"FLAGGED, retained",log return -0.2205 = -8.3 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2020-04-21,17.36,9.12,"FLAGGED, retained",log return -0.6437 = -24.3 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2020-04-22,9.12,13.77,"FLAGGED, retained",log return 0.4120 = 15.5 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2020-05-05,20.4,25.46,"FLAGGED, retained",log return 0.2216 = 8.4 sigma
+BRENT_D,A - extreme outlier,3/3 screens,2026-04-17,116.63,98.63,"FLAGGED, retained",log return -0.1676 = -6.3 sigma
+WTI_D,A - extreme outlier,non-positive price level,2020-04-20,-36.98,-36.98,"RETAINED, excluded from log transform",economically real but undefined under the logarithm
+DAILY PANEL,C - missing values,analysis calendar,1990-01-02,,,REINDEXED to 8550 trading days,"non-trading days are structural absences, not holes to be filled"
+CPIENG,C - missing values,gap <= 2,2025-10-01,,,INTERPOLATED (1 obs),time-weighted linear interpolation inside the observed span
+UNRATE,C - missing values,gap <= 2,2025-10-01,,,INTERPOLATED (1 obs),time-weighted linear interpolation inside the observed span
+BRENT_D,C - missing values,gap <= 3,1990-01-12,,,INTERPOLATED (648 obs),time-weighted linear interpolation inside the observed span
+BRENT_D,C - missing values,gap > 3,1994-05-10,,,LEFT MISSING (129 obs),"long interior gap, imputation would fabricate a trend"
+USD_D,C - missing values,gap <= 3,2007-01-02,,,INTERPOLATED (54 obs),time-weighted linear interpolation inside the observed span
+USD_D,C - missing values,gap > 3,2010-02-08,,,LEFT MISSING (4 obs),"long interior gap, imputation would fabricate a trend"
+DGS10,C - missing values,gap <= 3,1990-01-15,,,INTERPOLATED (79 obs),time-weighted linear interpolation inside the observed span
+HH_GAS,C - missing values,gap <= 3,1997-01-22,,,INTERPOLATED (423 obs),time-weighted linear interpolation inside the observed span
+HH_GAS,C - missing values,gap > 3,1997-08-13,,,LEFT MISSING (1025 obs),"long interior gap, imputation would fabricate a trend"
+VIX,C - missing values,gap <= 3,1990-02-19,,,INTERPOLATED (16 obs),time-weighted linear interpolation inside the observed span
+VIX,C - missing values,gap > 3,2001-09-11,,,LEFT MISSING (4 obs),"long interior gap, imputation would fabricate a trend"
+OVX,C - missing values,gap <= 3,2012-10-29,,,INTERPOLATED (3 obs),time-weighted linear interpolation inside the observed span
+NASDAQ,C - missing values,gap <= 3,1990-02-19,,,INTERPOLATED (14 obs),time-weighted linear interpolation inside the observed span
+NASDAQ,C - missing values,gap > 3,2001-09-11,,,LEFT MISSING (4 obs),"long interior gap, imputation would fabricate a trend"
+HH_GAS,Step 6 - sterilisation,interior missingness > 10%,,,,SERIES DROPPED,1025 interior holes remain after imputation
+HH_GAS,Step 6 - sterilisation,frequency reduction,,,,AGGREGATED to monthly,monthly mean retained where the month holds at least 10 daily quotes
+MONTHLY PANEL,Step 6 - sterilisation,modelling window,1990-01-01,,,TRUNCATED,"sample starts when every core supply, demand and price variable is observed"
+MONTHLY PANEL,Step 6 - sterilisation,ragged edge,2026-07-01,,,TRUNCATED,months after this date are not yet published for every provider

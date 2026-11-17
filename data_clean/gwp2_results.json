@@ -1,0 +1,265 @@
+{
+ "panel": {
+  "months": 439,
+  "variables": 17,
+  "train": 351,
+  "valid": 44,
+  "test": 44
+ },
+ "dropped": {
+  "PPI_CRUDE": "producer price index for crude petroleum, measures the target rather than driving it",
+  "CAPUTL_OILGAS": "capacity utilisation is output divided by capacity, already carried by IP_OILGAS and CAP_OILGAS",
+  "BRENT_M": "second light sweet benchmark, co-moves with WTI by construction"
+ },
+ "agreement_smoothed_vs_causal": {
+  "CPIENG": 0.807,
+  "FEDFUNDS": 0.896,
+  "GS10": 0.845,
+  "IGREA": 0.925,
+  "INDPRO": 0.787,
+  "M2": 0.862,
+  "UNRATE": 0.809,
+  "USEPU": 0.754,
+  "GEOEVENT": 1.0,
+  "CAP_OILGAS": 0.983,
+  "IP_DRILL": 0.874,
+  "IP_OILGAS": 0.845,
+  "PPI_DRILL": 0.886,
+  "PPI_OILGAS": 0.812,
+  "GOLD": 0.785,
+  "SP500": 0.889,
+  "WTI_M": 0.778
+ },
+ "mean_agreement": 0.855,
+ "share_up": {
+  "CPIENG": 0.543,
+  "FEDFUNDS": 0.434,
+  "GS10": 0.438,
+  "IGREA": 0.518,
+  "INDPRO": 0.63,
+  "M2": 0.893,
+  "UNRATE": 0.317,
+  "USEPU": 0.468,
+  "GEOEVENT": 0.034,
+  "CAP_OILGAS": 0.566,
+  "IP_DRILL": 0.6,
+  "IP_OILGAS": 0.591,
+  "PPI_DRILL": 0.591,
+  "PPI_OILGAS": 0.539,
+  "GOLD": 0.495,
+  "SP500": 0.646,
+  "WTI_M": 0.566
+ },
+ "regime_mix_all": {
+  "bear": 0.395,
+  "bull": 0.393,
+  "stagnant": 0.212
+ },
+ "regime_mix_event_months": {
+  "bear": 0.562,
+  "bull": 0.25,
+  "stagnant": 0.188
+ },
+ "transition_matrix": {
+  "Bear": {
+   "Bear": 0.465,
+   "Stagnant": 1.0,
+   "Bull": 0.0
+  },
+  "Stagnant": {
+   "Bear": 0.064,
+   "Stagnant": 0.0,
+   "Bull": 0.471
+  },
+  "Bull": {
+   "Bear": 0.471,
+   "Stagnant": 0.0,
+   "Bull": 0.529
+  }
+ },
+ "results": {
+  "lisse": {
+   "n_edges": 18,
+   "edges": [
+    [
+     "CPIENG",
+     "PPI_OILGAS"
+    ],
+    [
+     "FEDFUNDS",
+     "IP_DRILL"
+    ],
+    [
+     "INDPRO",
+     "UNRATE"
+    ],
+    [
+     "INDPRO",
+     "CAP_OILGAS"
+    ],
+    [
+     "INDPRO",
+     "PPI_DRILL"
+    ],
+    [
+     "INDPRO",
+     "SP500"
+    ],
+    [
+     "INDPRO",
+     "CPIENG"
+    ],
+    [
+     "UNRATE",
+     "PPI_DRILL"
+    ],
+    [
+     "UNRATE",
+     "FEDFUNDS"
+    ],
+    [
+     "GEOEVENT",
+     "SP500"
+    ],
+    [
+     "GEOEVENT",
+     "USEPU"
+    ],
+    [
+     "PPI_DRILL",
+     "SP500"
+    ],
+    [
+     "GOLD",
+     "PPI_DRILL"
+    ],
+    [
+     "WTI_M",
+     "CPIENG"
+    ],
+    [
+     "WTI_M",
+     "PPI_OILGAS"
+    ],
+    [
+     "FORECAST",
+     "PPI_OILGAS"
+    ],
+    [
+     "FORECAST",
+     "CPIENG"
+    ],
+    [
+     "FORECAST",
+     "WTI_M"
+    ]
+   ],
+   "blanket": [
+    "CPIENG",
+    "INDPRO",
+    "PPI_OILGAS",
+    "WTI_M"
+   ],
+   "valid": {
+    "n": 44,
+    "network_accuracy": 0.7045,
+    "persistence_accuracy": 0.3636,
+    "majority_accuracy": 0.3864,
+    "chance": 0.3333
+   },
+   "test": {
+    "n": 44,
+    "network_accuracy": 0.7273,
+    "persistence_accuracy": 0.3864,
+    "majority_accuracy": 0.4773,
+    "chance": 0.3333
+   }
+  },
+  "causal": {
+   "n_edges": 16,
+   "edges": [
+    [
+     "CPIENG",
+     "GOLD"
+    ],
+    [
+     "FEDFUNDS",
+     "INDPRO"
+    ],
+    [
+     "FEDFUNDS",
+     "CAP_OILGAS"
+    ],
+    [
+     "INDPRO",
+     "CAP_OILGAS"
+    ],
+    [
+     "INDPRO",
+     "SP500"
+    ],
+    [
+     "M2",
+     "CAP_OILGAS"
+    ],
+    [
+     "UNRATE",
+     "INDPRO"
+    ],
+    [
+     "UNRATE",
+     "FEDFUNDS"
+    ],
+    [
+     "UNRATE",
+     "PPI_DRILL"
+    ],
+    [
+     "USEPU",
+     "IP_OILGAS"
+    ],
+    [
+     "PPI_DRILL",
+     "IP_DRILL"
+    ],
+    [
+     "PPI_DRILL",
+     "INDPRO"
+    ],
+    [
+     "PPI_OILGAS",
+     "CPIENG"
+    ],
+    [
+     "PPI_OILGAS",
+     "WTI_M"
+    ],
+    [
+     "WTI_M",
+     "FORECAST"
+    ],
+    [
+     "WTI_M",
+     "CPIENG"
+    ]
+   ],
+   "blanket": [
+    "WTI_M"
+   ],
+   "valid": {
+    "n": 41,
+    "network_accuracy": 0.5854,
+    "persistence_accuracy": 0.5122,
+    "majority_accuracy": 0.5854,
+    "chance": 0.3333
+   },
+   "test": {
+    "n": 42,
+    "network_accuracy": 0.4524,
+    "persistence_accuracy": 0.5238,
+    "majority_accuracy": 0.4524,
+    "chance": 0.3333
+   }
+  }
+ }
+}

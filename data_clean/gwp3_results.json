@@ -1,0 +1,785 @@
+{
+ "panel": {
+  "months": 439,
+  "variables": 17,
+  "train": 351,
+  "valid": 44,
+  "test": 44,
+  "warmup": 24
+ },
+ "baseline": {
+  "smoothed": {
+   "score": "k2",
+   "max_indegree": 3,
+   "n_edges": 18,
+   "edges": [
+    [
+     "CPIENG",
+     "PPI_OILGAS"
+    ],
+    [
+     "FEDFUNDS",
+     "IP_DRILL"
+    ],
+    [
+     "INDPRO",
+     "UNRATE"
+    ],
+    [
+     "INDPRO",
+     "CAP_OILGAS"
+    ],
+    [
+     "INDPRO",
+     "PPI_DRILL"
+    ],
+    [
+     "INDPRO",
+     "SP500"
+    ],
+    [
+     "INDPRO",
+     "CPIENG"
+    ],
+    [
+     "UNRATE",
+     "PPI_DRILL"
+    ],
+    [
+     "UNRATE",
+     "FEDFUNDS"
+    ],
+    [
+     "GEOEVENT",
+     "SP500"
+    ],
+    [
+     "GEOEVENT",
+     "USEPU"
+    ],
+    [
+     "PPI_DRILL",
+     "SP500"
+    ],
+    [
+     "GOLD",
+     "PPI_DRILL"
+    ],
+    [
+     "WTI_M",
+     "CPIENG"
+    ],
+    [
+     "WTI_M",
+     "PPI_OILGAS"
+    ],
+    [
+     "FORECAST",
+     "PPI_OILGAS"
+    ],
+    [
+     "FORECAST",
+     "CPIENG"
+    ],
+    [
+     "FORECAST",
+     "WTI_M"
+    ]
+   ],
+   "blanket": [
+    "CPIENG",
+    "INDPRO",
+    "PPI_OILGAS",
+    "WTI_M"
+   ],
+   "cpt_cells": 402,
+   "valid": {
+    "n": 44,
+    "network_accuracy": 0.7045,
+    "persistence_accuracy": 0.3636,
+    "majority_accuracy": 0.3864,
+    "chance": 0.3333,
+    "balanced_accuracy": 0.6902,
+    "macro_f1": 0.6803,
+    "classes_observed": 3,
+    "largest_class_share": 0.3864,
+    "degenerate_window": false
+   },
+   "test": {
+    "n": 44,
+    "network_accuracy": 0.7273,
+    "persistence_accuracy": 0.3864,
+    "majority_accuracy": 0.4773,
+    "chance": 0.3333,
+    "balanced_accuracy": 0.6799,
+    "macro_f1": 0.6895,
+    "classes_observed": 3,
+    "largest_class_share": 0.4773,
+    "degenerate_window": false
+   }
+  },
+  "causal": {
+   "score": "k2",
+   "max_indegree": 3,
+   "n_edges": 16,
+   "edges": [
+    [
+     "CPIENG",
+     "GOLD"
+    ],
+    [
+     "FEDFUNDS",
+     "INDPRO"
+    ],
+    [
+     "FEDFUNDS",
+     "CAP_OILGAS"
+    ],
+    [
+     "INDPRO",
+     "CAP_OILGAS"
+    ],
+    [
+     "INDPRO",
+     "SP500"
+    ],
+    [
+     "M2",
+     "CAP_OILGAS"
+    ],
+    [
+     "UNRATE",
+     "INDPRO"
+    ],
+    [
+     "UNRATE",
+     "FEDFUNDS"
+    ],
+    [
+     "UNRATE",
+     "PPI_DRILL"
+    ],
+    [
+     "USEPU",
+     "IP_OILGAS"
+    ],
+    [
+     "PPI_DRILL",
+     "IP_DRILL"
+    ],
+    [
+     "PPI_DRILL",
+     "INDPRO"
+    ],
+    [
+     "PPI_OILGAS",
+     "CPIENG"
+    ],
+    [
+     "PPI_OILGAS",
+     "WTI_M"
+    ],
+    [
+     "WTI_M",
+     "FORECAST"
+    ],
+    [
+     "WTI_M",
+     "CPIENG"
+    ]
+   ],
+   "blanket": [
+    "WTI_M"
+   ],
+   "cpt_cells": 282,
+   "valid": {
+    "n": 41,
+    "network_accuracy": 0.5854,
+    "persistence_accuracy": 0.5122,
+    "majority_accuracy": 0.5854,
+    "chance": 0.3333,
+    "balanced_accuracy": 0.3333,
+    "macro_f1": 0.2462,
+    "classes_observed": 3,
+    "largest_class_share": 0.5854,
+    "degenerate_window": false
+   },
+   "test": {
+    "n": 42,
+    "network_accuracy": 0.4524,
+    "persistence_accuracy": 0.5238,
+    "majority_accuracy": 0.4524,
+    "chance": 0.3333,
+    "balanced_accuracy": 0.3333,
+    "macro_f1": 0.2077,
+    "classes_observed": 3,
+    "largest_class_share": 0.4524,
+    "degenerate_window": false
+   }
+  }
+ },
+ "replication": {
+  "ours": {
+   "score": "k2",
+   "max_indegree": 3,
+   "n_edges": 18,
+   "edges": [
+    [
+     "CPIENG",
+     "PPI_OILGAS"
+    ],
+    [
+     "FEDFUNDS",
+     "IP_DRILL"
+    ],
+    [
+     "INDPRO",
+     "UNRATE"
+    ],
+    [
+     "INDPRO",
+     "CAP_OILGAS"
+    ],
+    [
+     "INDPRO",
+     "PPI_DRILL"
+    ],
+    [
+     "INDPRO",
+     "SP500"
+    ],
+    [
+     "INDPRO",
+     "CPIENG"
+    ],
+    [
+     "UNRATE",
+     "PPI_DRILL"
+    ],
+    [
+     "UNRATE",
+     "FEDFUNDS"
+    ],
+    [
+     "GEOEVENT",
+     "SP500"
+    ],
+    [
+     "GEOEVENT",
+     "USEPU"
+    ],
+    [
+     "PPI_DRILL",
+     "SP500"
+    ],
+    [
+     "GOLD",
+     "PPI_DRILL"
+    ],
+    [
+     "WTI_M",
+     "CPIENG"
+    ],
+    [
+     "WTI_M",
+     "PPI_OILGAS"
+    ],
+    [
+     "FORECAST",
+     "PPI_OILGAS"
+    ],
+    [
+     "FORECAST",
+     "CPIENG"
+    ],
+    [
+     "FORECAST",
+     "WTI_M"
+    ]
+   ],
+   "blanket": [
+    "CPIENG",
+    "INDPRO",
+    "PPI_OILGAS",
+    "WTI_M"
+   ],
+   "cpt_cells": 402,
+   "valid": {
+    "n": 44,
+    "network_accuracy": 0.7045,
+    "persistence_accuracy": 0.3636,
+    "majority_accuracy": 0.3864,
+    "chance": 0.3333,
+    "balanced_accuracy": 0.6902,
+    "macro_f1": 0.6803,
+    "classes_observed": 3,
+    "largest_class_share": 0.3864,
+    "degenerate_window": false
+   },
+   "test": {
+    "n": 44,
+    "network_accuracy": 0.7273,
+    "persistence_accuracy": 0.3864,
+    "majority_accuracy": 0.4773,
+    "chance": 0.3333,
+    "balanced_accuracy": 0.6799,
+    "macro_f1": 0.6895,
+    "classes_observed": 3,
+    "largest_class_share": 0.4773,
+    "degenerate_window": false
+   }
+  },
+  "alvi": {
+   "valid_error": 0.6786,
+   "test_error": 0.4286,
+   "valid_accuracy": 0.3214,
+   "test_accuracy": 0.5714,
+   "n_valid": 28,
+   "n_test": 28
+  }
+ },
+ "uncapped_probe": {
+  "status": "completed",
+  "max_parents": 17,
+  "cpt_cells": 559607460,
+  "n_edges": 55,
+  "seconds": 4.1
+ },
+ "indegree_sweep": [
+  {
+   "max_indegree": 1,
+   "n_edges": 12,
+   "cpt_cells": 126,
+   "obs_per_cell": 2.7857,
+   "valid_accuracy": 0.5854,
+   "valid_balanced": 0.3333,
+   "test_accuracy": 0.4524,
+   "test_balanced": 0.3333,
+   "blanket": "WTI_M"
+  },
+  {
+   "max_indegree": 2,
+   "n_edges": 14,
+   "cpt_cells": 174,
+   "obs_per_cell": 2.0172,
+   "valid_accuracy": 0.5854,
+   "valid_balanced": 0.3333,
+   "test_accuracy": 0.4524,
+   "test_balanced": 0.3333,
+   "blanket": "WTI_M"
+  },
+  {
+   "max_indegree": 3,
+   "n_edges": 16,
+   "cpt_cells": 282,
+   "obs_per_cell": 1.2447,
+   "valid_accuracy": 0.5854,
+   "valid_balanced": 0.3333,
+   "test_accuracy": 0.4524,
+   "test_balanced": 0.3333,
+   "blanket": "WTI_M"
+  },
+  {
+   "max_indegree": 4,
+   "n_edges": 20,
+   "cpt_cells": 678,
+   "obs_per_cell": 0.5177,
+   "valid_accuracy": 0.5854,
+   "valid_balanced": 0.3333,
+   "test_accuracy": 0.4524,
+   "test_balanced": 0.3333,
+   "blanket": "WTI_M"
+  },
+  {
+   "max_indegree": 5,
+   "n_edges": 21,
+   "cpt_cells": 1164,
+   "obs_per_cell": 0.3015,
+   "valid_accuracy": 0.5854,
+   "valid_balanced": 0.3333,
+   "test_accuracy": 0.4524,
+   "test_balanced": 0.3333,
+   "blanket": "WTI_M"
+  }
+ ],
+ "score_selection": [
+  {
+   "score": "k2",
+   "label": "K2",
+   "n_edges": 16,
+   "blanket": "WTI_M",
+   "valid_accuracy": 0.5854,
+   "valid_balanced": 0.3333,
+   "test_accuracy": 0.4524,
+   "test_balanced": 0.3333
+  },
+  {
+   "score": "bic-d",
+   "label": "BIC",
+   "n_edges": 8,
+   "blanket": "WTI_M",
+   "valid_accuracy": 0.5854,
+   "valid_balanced": 0.3333,
+   "test_accuracy": 0.4524,
+   "test_balanced": 0.3333
+  },
+  {
+   "score": "bdeu",
+   "label": "BDeu",
+   "n_edges": 16,
+   "blanket": "WTI_M",
+   "valid_accuracy": 0.5854,
+   "valid_balanced": 0.3333,
+   "test_accuracy": 0.4524,
+   "test_balanced": 0.3333
+  }
+ ],
+ "dead_band": [
+  {
+   "q": 0.0,
+   "band_wti": 0.0,
+   "n_symbols": 2,
+   "n_edges": 16,
+   "valid_accuracy": 0.5854,
+   "valid_balanced": 0.3333,
+   "valid_largest_class": 0.5854,
+   "valid_degenerate": false,
+   "test_degenerate": false,
+   "test_accuracy": 0.4524,
+   "test_balanced": 0.3333,
+   "test_macro_f1": 0.2077,
+   "test_largest_class": 0.4524,
+   "test_classes_observed": 3,
+   "persistence_test": 0.5238,
+   "majority_test": 0.4524,
+   "share_bear": 0.395,
+   "share_stagnant": 0.212,
+   "share_bull": 0.393
+  },
+  {
+   "q": 0.1,
+   "band_wti": 0.3445,
+   "n_symbols": 3,
+   "n_edges": 22,
+   "valid_accuracy": 0.9756,
+   "valid_balanced": 0.6667,
+   "valid_largest_class": 0.9512,
+   "valid_degenerate": false,
+   "test_degenerate": false,
+   "test_accuracy": 0.9048,
+   "test_balanced": 0.6574,
+   "test_macro_f1": 0.6486,
+   "test_largest_class": 0.8571,
+   "test_classes_observed": 3,
+   "persistence_test": 0.7857,
+   "majority_test": 0.8571,
+   "share_bear": 0.094,
+   "share_stagnant": 0.781,
+   "share_bull": 0.126
+  },
+  {
+   "q": 0.2,
+   "band_wti": 0.6382,
+   "n_symbols": 3,
+   "n_edges": 30,
+   "valid_accuracy": 1.0,
+   "valid_balanced": NaN,
+   "valid_largest_class": 1.0,
+   "valid_degenerate": true,
+   "test_degenerate": true,
+   "test_accuracy": 1.0,
+   "test_balanced": NaN,
+   "test_macro_f1": NaN,
+   "test_largest_class": 1.0,
+   "test_classes_observed": 1,
+   "persistence_test": 1.0,
+   "majority_test": 1.0,
+   "share_bear": 0.144,
+   "share_stagnant": 0.813,
+   "share_bull": 0.043
+  },
+  {
+   "q": 0.3,
+   "band_wti": 1.034,
+   "n_symbols": 3,
+   "n_edges": 34,
+   "valid_accuracy": 1.0,
+   "valid_balanced": NaN,
+   "valid_largest_class": 1.0,
+   "valid_degenerate": true,
+   "test_degenerate": true,
+   "test_accuracy": 1.0,
+   "test_balanced": NaN,
+   "test_macro_f1": NaN,
+   "test_largest_class": 1.0,
+   "test_classes_observed": 1,
+   "persistence_test": 1.0,
+   "majority_test": 1.0,
+   "share_bear": 0.062,
+   "share_stagnant": 0.064,
+   "share_bull": 0.874
+  },
+  {
+   "q": 0.4,
+   "band_wti": 1.312,
+   "n_symbols": 3,
+   "n_edges": 30,
+   "valid_accuracy": 1.0,
+   "valid_balanced": NaN,
+   "valid_largest_class": 1.0,
+   "valid_degenerate": true,
+   "test_degenerate": true,
+   "test_accuracy": 1.0,
+   "test_balanced": NaN,
+   "test_macro_f1": NaN,
+   "test_largest_class": 1.0,
+   "test_classes_observed": 1,
+   "persistence_test": 1.0,
+   "majority_test": 1.0,
+   "share_bear": 0.135,
+   "share_stagnant": 0.137,
+   "share_bull": 0.728
+  }
+ ],
+ "final": {
+  "score": "k2",
+  "max_indegree": 3,
+  "dead_band_q": 0.1,
+  "n_edges": 22,
+  "edges": [
+   [
+    "CPIENG",
+    "PPI_OILGAS"
+   ],
+   [
+    "CPIENG",
+    "GS10"
+   ],
+   [
+    "CPIENG",
+    "IGREA"
+   ],
+   [
+    "FEDFUNDS",
+    "M2"
+   ],
+   [
+    "GEOEVENT",
+    "IP_DRILL"
+   ],
+   [
+    "GEOEVENT",
+    "INDPRO"
+   ],
+   [
+    "GEOEVENT",
+    "GS10"
+   ],
+   [
+    "CAP_OILGAS",
+    "FEDFUNDS"
+   ],
+   [
+    "CAP_OILGAS",
+    "INDPRO"
+   ],
+   [
+    "CAP_OILGAS",
+    "M2"
+   ],
+   [
+    "IP_DRILL",
+    "CAP_OILGAS"
+   ],
+   [
+    "IP_DRILL",
+    "INDPRO"
+   ],
+   [
+    "PPI_DRILL",
+    "IP_DRILL"
+   ],
+   [
+    "PPI_DRILL",
+    "M2"
+   ],
+   [
+    "PPI_DRILL",
+    "UNRATE"
+   ],
+   [
+    "GOLD",
+    "GS10"
+   ],
+   [
+    "SP500",
+    "UNRATE"
+   ],
+   [
+    "SP500",
+    "IGREA"
+   ],
+   [
+    "FORECAST",
+    "SP500"
+   ],
+   [
+    "FORECAST",
+    "IP_DRILL"
+   ],
+   [
+    "FORECAST",
+    "CPIENG"
+   ],
+   [
+    "FORECAST",
+    "WTI_M"
+   ]
+  ],
+  "blanket": [
+   "CPIENG",
+   "GEOEVENT",
+   "IP_DRILL",
+   "PPI_DRILL",
+   "SP500",
+   "WTI_M"
+  ],
+  "cpt_cells": 450,
+  "valid": {
+   "n": 41,
+   "network_accuracy": 0.9756,
+   "persistence_accuracy": 0.9268,
+   "majority_accuracy": 0.9512,
+   "chance": 0.3333,
+   "balanced_accuracy": 0.6667,
+   "macro_f1": 0.6624,
+   "classes_observed": 3,
+   "largest_class_share": 0.9512,
+   "degenerate_window": false
+  },
+  "test": {
+   "n": 42,
+   "network_accuracy": 0.9048,
+   "persistence_accuracy": 0.7857,
+   "majority_accuracy": 0.8571,
+   "chance": 0.3333,
+   "balanced_accuracy": 0.6574,
+   "macro_f1": 0.6486,
+   "classes_observed": 3,
+   "largest_class_share": 0.8571,
+   "degenerate_window": false
+  }
+ },
+ "episode_lengths": {
+  "binary": {
+   "bear": 1.86,
+   "stagnant": 1.0,
+   "bull": 2.12
+  },
+  "banded": {
+   "bear": 1.32,
+   "stagnant": 13.68,
+   "bull": 1.0
+  }
+ },
+ "backtest": {
+  "model": {
+   "strategy": "Belief network signal",
+   "cumulative_return": 0.1206,
+   "annualised_return": 0.0333,
+   "annualised_vol": 0.063,
+   "return_over_vol": 0.529,
+   "max_drawdown": -0.0516,
+   "months_long": 3,
+   "months_short": 1,
+   "months_flat": 37
+  },
+  "buy_and_hold": {
+   "strategy": "Buy and hold",
+   "cumulative_return": 0.0856,
+   "annualised_return": 0.024,
+   "annualised_vol": 0.2932,
+   "return_over_vol": 0.082,
+   "max_drawdown": -0.3518,
+   "months_long": 41,
+   "months_short": 0,
+   "months_flat": 0
+  },
+  "n_months": 41
+ },
+ "figure_audit": [
+  {
+   "figure": "G8_data_allocation.png",
+   "kind": "chart",
+   "data_axes": 1,
+   "x_label": true,
+   "y_label": true,
+   "ticks_both_axes": true,
+   "source_note": true
+  },
+  {
+   "figure": "G9_replication.png",
+   "kind": "chart",
+   "data_axes": 1,
+   "x_label": true,
+   "y_label": true,
+   "ticks_both_axes": true,
+   "source_note": true
+  },
+  {
+   "figure": "G10_indegree.png",
+   "kind": "chart",
+   "data_axes": 2,
+   "x_label": true,
+   "y_label": true,
+   "ticks_both_axes": true,
+   "source_note": true
+  },
+  {
+   "figure": "G11_score_selection.png",
+   "kind": "chart",
+   "data_axes": 1,
+   "x_label": true,
+   "y_label": true,
+   "ticks_both_axes": true,
+   "source_note": true
+  },
+  {
+   "figure": "G12_dead_band.png",
+   "kind": "chart",
+   "data_axes": 2,
+   "x_label": true,
+   "y_label": true,
+   "ticks_both_axes": true,
+   "source_note": true
+  },
+  {
+   "figure": "G13_episode_duration.png",
+   "kind": "chart",
+   "data_axes": 1,
+   "x_label": true,
+   "y_label": true,
+   "ticks_both_axes": true,
+   "source_note": true
+  },
+  {
+   "figure": "G14_backtest.png",
+   "kind": "chart",
+   "data_axes": 2,
+   "x_label": true,
+   "y_label": true,
+   "ticks_both_axes": true,
+   "source_note": true
+  },
+  {
+   "figure": "G15_final_network.png",
+   "kind": "diagram",
+   "data_axes": 0,
+   "x_label": "n/a",
+   "y_label": "n/a",
+   "ticks_both_axes": "n/a",
+   "source_note": true
+  }
+ ],
+ "runtime_seconds": 173.6
+}
